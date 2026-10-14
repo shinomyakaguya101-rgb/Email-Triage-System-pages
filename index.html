@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Information about Email Triage System, Jonathan's personal Gmail automation, its permissions, and privacy practices.">
+  <meta name="referrer" content="no-referrer">
+  <title>Email Triage System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="brand" href="index.html">Email Triage System<span>Personal automation</span></a>
+    <nav aria-label="Main navigation">
+      <a href="index.html" aria-current="page">Overview</a>
+      <a href="privacy.html">Privacy policy</a>
+    </nav>
+  </header>
+  <main id="main" class="wrap" tabindex="-1">
+    <div class="notice"><strong>Review draft · 14 October 2026</strong><p>The production AI-provider configuration is unresolved. This information site is prepared for review; it does not indicate Google verification or a live cloud service.</p></div>
+    <section class="hero" aria-labelledby="intro">
+      <p class="eyebrow">Application information</p>
+      <h1 id="intro">A clearer view of<br>the inbox.</h1>
+      <p class="lead">Email Triage System is Jonathan's personal Python automation for organizing authorized Gmail messages, summarizing what matters, and suggesting next actions.</p>
+      <a class="button" href="privacy.html">Read the privacy policy <span aria-hidden="true">↗</span></a>
+      <p class="small">Personal use only. Public account sign-up is not available.</p>
+    </section>
+    <section class="section" aria-labelledby="functionality">
+      <div class="section-heading"><p class="eyebrow">What it does</p><h2 id="functionality">From message to next step.</h2></div>
+      <div class="feature-grid">
+        <article><span class="number" aria-hidden="true">01</span><h3>Read &amp; organize</h3><p>Reads messages from the Gmail account Jonathan authorizes. Gemini classifies messages, creates summaries, and suggests next actions. Depending on the route, the system applies labels or moves selected low-value promotional mail to Trash.</p></article>
+        <article><span class="number" aria-hidden="true">02</span><h3>Record &amp; alert</h3><p>Records triage results in the <code>Email_Triage_Logs</code> tab of one Google spreadsheet. Selected urgent messages generate alerts in a chosen Slack channel.</p></article>
+        <article><span class="number" aria-hidden="true">03</span><h3>Evaluate job opportunities</h3><p>Fetches linked public job pages, evaluates opportunities against a private job-preference profile, and records results in the <code>Job_Opportunities</code> tab of the same spreadsheet.</p></article>
+      </div>
+      <p class="route-note"><strong>Cold outreach:</strong> after classification, this route takes no Gmail, Sheets, or Slack action. The email is still read and sent to the configured AI provider for classification; local completion state may record that it was handled.</p>
+    </section>
+    <section class="section split" aria-labelledby="access">
+      <div><p class="eyebrow">Access &amp; operation</p><h2 id="access">Permission has a purpose.</h2></div>
+      <div><p>Gmail access supports reading authorized messages, detecting mailbox changes, applying labels, and moving selected messages to Trash. Sheets access supports recording results in the selected spreadsheet.</p><p>Mailbox access is authorized through Google OAuth and can be revoked in <a href="https://myaccount.google.com/connections">Google Account connections</a>. Revoking access does not automatically delete earlier spreadsheet rows, Slack alerts, or processing records.</p><p>Cloud processing using Gmail push notifications, Pub/Sub, and a private Cloud Run service has been prepared. Activation and operation while the laptop is off remain unverified.</p></div>
+    </section>
+    <section class="contact section" aria-labelledby="contact">
+      <p class="eyebrow">Support &amp; privacy questions</p><h2 id="contact">Contact Jonathan.</h2>
+      <p><a class="contact-link" href="mailto:jonathan.verdera01@gmail.com">jonathan.verdera01@gmail.com</a></p>
+      <p>This website provides application information. Visiting it does not connect your Gmail account or run the automation.</p>
+    </section>
+  </main>
+  <footer class="site-footer wrap"><p>Email Triage System · Operated by Jonathan</p><a href="privacy.html">Privacy policy</a></footer>
+</body>
+</html>
